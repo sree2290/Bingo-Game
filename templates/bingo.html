@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bino Game</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+
+</head>
+<body onload="populateTable()">
+  <div class="container">
+    <div class="bingo-table">
+      <h1 class="table-heading">BINGO TABLE</h1>
+      <table>
+        <tr>
+          <td onclick="toggleSelected(this)"></td>
+          <td onclick="toggleSelected(this)"></td>
+          <td onclick="toggleSelected(this)"></td>
+          <td onclick="toggleSelected(this)"></td>
+          <td onclick="toggleSelected(this)"></td>
+        </tr>
+       <tr>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+    </tr>
+    <tr>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+    </tr>
+    <tr>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+    </tr>
+    <tr>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+      <td onclick="toggleSelected(this)"></td>
+    </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="b-table">
+    <div class="row">
+<div class="letter" id="letterB">B</div>
+    <div class="letter" id="letterI">I</div>
+    <div class="letter" id="letterN">N</div>
+    <div class="letter" id="letterG">G</div>
+    <div class="letter" id="letterO">O</div>
+    </div>
+  </div>
+
+
+
+{% include 'chat.html' %}
+
+
+  <!-- <script src="{{ url_for('static', filename='script.js') }}"></script> -->
+     <script src="static/script.js" data-user-name="{{ user_name }}"></script>
+</body>
+</html>

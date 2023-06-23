@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    
+</head>
+<body>
+    <div class="containerintro">
+        <h2>Bingo</h2>
+        <form action="{{ url_for('login') }}" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <input type="submit" value="Login">
+            <P>New User...? <a href="{{ url_for('create_account_page') }}" class="create-account-btn">Create Account</a> </P>
+
+        </form>
+        <p style="text-align: center; position: fixed; bottom: 45px; width: 100%; left:8px">Made by Sree with love 🖤</p>
+    </div>
+</body>
+</html>
