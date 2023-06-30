@@ -1,5 +1,7 @@
 # Bingo-Game
 By using this application people can play the bingo game at a time they can Chat in the side chat window
+# you can see the live page avilable below 
+[click here](https://bingo-sree2290.vercel.app/)
 # Sample Images of the Application
 Screenshots:
 
